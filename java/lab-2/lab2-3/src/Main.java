@@ -1,20 +1,23 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.Random;
 
 
 public class Main {
     public static void main(String[] args) {
+            //生成长度为10，元素为1-10的随机数组；即1,2,3,4,5,6,7,8,9,10
+            //其中RandomArray类中setRandomArray方法，已注释排序语句，所以输出为乱序数组，若需输出有序数组，去除该注释即可
         RandomArray random1 = new RandomArray(10,1,10);
-        System.out.println(random1.toString());
 
         Twin test1 = new Twin(random1.getRandomArray());
-        test1.twinOf(9);
+
+            //置入键值，用于查询
+        test1.twinOf(8);//本身会返回twins的数量（int）
+            //格式化输出twinOf置入数字后的查询信息
         System.out.println(test1.toString());
     }
 }
 
-//生成不重复随机int数组的类，构造函数中依次传入长度，上限，下限，用getRandomArray返回改数组，也可以用toString打印该数组
+//生成不重复随机int数组的类，构造函数中依次传入长度，上限，下限，用getRandomArray返回改数组，也可以用toString格式化返回该数组信息
 class RandomArray{
     private int[] randomArray;
 
@@ -46,7 +49,7 @@ class RandomArray{
                     count++;
                 }
             }
-            Arrays.sort(result);
+            //Arrays.sort(result);
             randomArray = result;
         }
     }
@@ -63,6 +66,9 @@ class RandomArray{
     }
 }
 
+//实现查找输出twins数量的类，构造函数传入任意数组（可有序，也可无序，会先将数组排序后存储），构造函数也可为空，之后用setFindTwin来初始化
+//通过调用类的twinOf函数来置入键值，用于查询，twinOf本身会直接返回twins的数量
+//提供其他public方法：toString方法，格式化输出twinOf置入数字后的查询信息
 class Twin{
     private int[] findTwin;
     private int key;
@@ -75,30 +81,34 @@ class Twin{
         setFindTwin(findTwin);
     }
     public void setFindTwin(int[] findTwin){
+        Arrays.sort(findTwin);
         this.findTwin = findTwin;
     }
 
     //这里是实现查找并返回的实际算法，输入查询键值keyNum，返回twin的对数
     public int twinOf(int keyNum){
-        int num = findTwin(keyNum);
-        setNumber(num);
-        System.out.println(getNumber());
-        return getNumber();
+        setKey(keyNum);
+        setNumber(find(keyNum));
+        return number;
     }
 
-    private int findTwin(int key){
+    private int find(int key){
         //此处视为了在查找之前就先把大于等于的部分去除，从而减少查找的次数
-        int searchDomain = 0;
+        int searchDomain = -1;
         for (int i=0; i<findTwin.length; i++){
             if (findTwin[i] >= key){
-                searchDomain = i++;
+                searchDomain = i;
                 break;
             }
         }
+        if (searchDomain == -1){
+            searchDomain = findTwin.length;
+        }
+
         int num = 0;
         for (int i=0; i<searchDomain; i++){
             //这里通过引入可指定范围的二分查找，只搜索在数组该项后的数据，避免了重复查找
-            if (search(findTwin,i,searchDomain,key-findTwin[i]) >= 0){
+            if (search(findTwin,i+1,searchDomain,key-findTwin[i]) >= 0){
                 num++;
             }
         }
@@ -128,13 +138,10 @@ class Twin{
         this.number = num;
     }
 
-    private int getNumber(){
-        return number;
-    }
-
     private void setKey(int key){
         this.key = key;
     }
+
     public String toString(){
         String result = "in the array of: ";
         for (int i=0; i<findTwin.length; i++){
@@ -143,7 +150,6 @@ class Twin{
         if (number > 1){result = result + "\nfor the key of: " + key +"; there are " + number + " pairs of twins\n";}
         else if (number == 1){result = result + "\nfor the key of: " + key +"; there are " + number + " pair of twins\n";}
         else if (number == 0){result = result + "\nfor the key of: " + key +"; there are no twins\n";}
-
         return result;
     }
 }
