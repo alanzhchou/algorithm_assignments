@@ -1,6 +1,17 @@
 public class Main {
-
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+
     }
+}
+
+
+class twin{
+    private int[] findTwin;
+    private int key;
+    private int number = 0;
+
+    public twin(){
+
+    }
+
 }
