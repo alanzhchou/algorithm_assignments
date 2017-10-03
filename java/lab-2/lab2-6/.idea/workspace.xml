@@ -16,18 +16,24 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="711">
-              <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+            <state relative-caret-position="84">
+              <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#595#596#0" expanded="true" />
-                <element signature="e#644#645#0" expanded="true" />
-                <element signature="e#701#702#0" expanded="true" />
-                <element signature="e#753#754#0" expanded="true" />
-                <element signature="e#814#815#0" expanded="true" />
-                <element signature="e#870#871#0" expanded="true" />
-                <element signature="e#914#915#0" expanded="true" />
-                <element signature="e#954#955#0" expanded="true" />
+                <element signature="class#Main#0" expanded="false" />
+                <element signature="class#SeatArrangement#0" expanded="false" />
+                <element signature="e#910#911#0" expanded="true" />
+                <element signature="e#959#960#0" expanded="true" />
+                <element signature="e#1016#1017#0" expanded="true" />
+                <element signature="e#1068#1069#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1184#1185#0" expanded="true" />
+                <element signature="e#1228#1229#0" expanded="true" />
+                <element signature="e#1268#1269#0" expanded="true" />
+                <element signature="method#findMaxSpaceFor#0;class#SeatArrangement#0" expanded="false" />
+                <element signature="method#find#0;class#SeatArrangement#0" expanded="false" />
+                <element signature="method#judge#0;class#SeatArrangement#0" expanded="false" />
+                <element signature="method#toString#0;class#SeatArrangement#0" expanded="false" />
                 <element signature="class#RandomArray#0" expanded="false" />
                 <element signature="method#toString#0;class#RandomArray#0" expanded="false" />
               </folding>
@@ -525,12 +531,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1507017887643</updated>
-      <workItem from="1507017891556" duration="7423000" />
+      <workItem from="1507017891556" duration="9833000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7423000" />
+    <option name="totallyTimeSpent" value="9833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="29" width="1938" height="1060" extended-state="6" />
@@ -557,7 +563,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977092" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -574,7 +580,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="9" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="antWorkspaceConfiguration">
@@ -584,18 +592,24 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="711">
-          <caret line="84" column="21" lean-forward="true" selection-start-line="84" selection-start-column="21" selection-end-line="84" selection-end-column="21" />
+        <state relative-caret-position="84">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#595#596#0" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#701#702#0" expanded="true" />
-            <element signature="e#753#754#0" expanded="true" />
-            <element signature="e#814#815#0" expanded="true" />
-            <element signature="e#870#871#0" expanded="true" />
-            <element signature="e#914#915#0" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
+            <element signature="class#Main#0" expanded="false" />
+            <element signature="class#SeatArrangement#0" expanded="false" />
+            <element signature="e#910#911#0" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1068#1069#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1228#1229#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="method#findMaxSpaceFor#0;class#SeatArrangement#0" expanded="false" />
+            <element signature="method#find#0;class#SeatArrangement#0" expanded="false" />
+            <element signature="method#judge#0;class#SeatArrangement#0" expanded="false" />
+            <element signature="method#toString#0;class#SeatArrangement#0" expanded="false" />
             <element signature="class#RandomArray#0" expanded="false" />
             <element signature="method#toString#0;class#RandomArray#0" expanded="false" />
           </folding>

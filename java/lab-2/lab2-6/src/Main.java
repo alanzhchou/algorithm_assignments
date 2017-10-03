@@ -3,14 +3,21 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        RandomArray rand1 = new RandomArray(10,2,109);
-        rand1.toString();
+        //生成随机数组对象（传入值依次为数组长度，下限，上限），之后可用用getRandomArray（）返回该数组
+        RandomArray rand1 = new RandomArray(10,2,15);
 
+        //生成安排座位的对象，（这里直接传入了代表座位序号的数组，也可不直接传入参数，之后用setAvailableSeats传入数组）
         SeatArrangement testSeat1 = new SeatArrangement(rand1.getRandomArray());
-        System.out.println(testSeat1.findMaxSpaceFor(7));
+
+        //传入学生数，格式化输出查询结果，本身返回maxSpacing（int）
+        testSeat1.findMaxSpaceFor(7);
     }
 }
 
+//实现座位最大空隔查找的类别，
+//构造时传入座位序号的数组，或不传入，之后用setAvailableSeats置入数组
+//只公开两个方法：输入学生数查找最大空隔的方法findMaxSpaceFor，其本身包含toString方法，可直接格式化输出查询信息，本身返回值是int类型的maxSpacing
+//toString方法，格式化输出查询信息
 class SeatArrangement{
     private int[] availableSeats;
     private int  numberOfStudents;
@@ -25,7 +32,6 @@ class SeatArrangement{
     public void setAvailableSeats(int[] availableSeats){
         this.availableSeats = availableSeats;
     }
-
     private void setNumberOfStudents(int numberOfStudents){
         this.numberOfStudents = numberOfStudents;
     }
@@ -33,16 +39,14 @@ class SeatArrangement{
         this.maxSpace = maxSpace;
     }
 
+    //供外界调用的public方法，传入学生数，格式化输出查询结果，本身返回maxSpacing（int）
     public int findMaxSpaceFor(int numberOfStudents){
         setNumberOfStudents(numberOfStudents);
+        this.toString();
 
         find(numberOfStudents);
-
-        System.out.println(this.toString());
         return maxSpace;
     }
-
-
 
     //这里是实现set主要返回值：maxSpace的实际函数
     private void find(int numberOfStudents){
@@ -51,28 +55,35 @@ class SeatArrangement{
 
         int space = 1;
 
-        boolean flag = false;
-        while (!flag){
+        while (true){
             if (judge(bigSpace) == true){
                 space = bigSpace;
-                flag = true;
+                break;
+            }else if (judge(bigSpace) == false &&judge(smallSpace) == false){
+                space = -1;
+                break;
             }else if (judge(bigSpace) == false &&judge(smallSpace) == true){
-                int midSpace = (bigSpace + smallSpace)/2;
+                int midSpace;
+                space = smallSpace;
+                if (bigSpace - smallSpace == 1){
+                    midSpace = (bigSpace + smallSpace)/2 + 1;
+                }else {
+                    midSpace = (bigSpace + smallSpace)/2;
+                }
 
+//                System.out.println(String.valueOf(smallSpace) + String.valueOf(midSpace) + String.valueOf(bigSpace));
+//                System.out.println(String.valueOf(judge(smallSpace)) + String.valueOf(judge(midSpace)) + String.valueOf(judge(bigSpace)));
                 if (judge(midSpace) == true){
                     smallSpace = midSpace;
                 }else {
                     bigSpace = midSpace;
                 }
-            }else if (judge(bigSpace) == false &&judge(smallSpace) == false){
-                space = -1;
-                flag = true;
             }
         }
-
         setMaxSpace(space);
     }
 
+    //这里是一个对传入的space进行检测的方法，按照此空隔可安排所有学生则返回true，反之为false
     private boolean judge(int testSpace){
         int counter = 1;
         int lastIndex = 0;
@@ -91,9 +102,14 @@ class SeatArrangement{
         return flag;
     }
 
-
     public String toString(){
-        String result = "";
+        String result = "in the seats of number: \n";
+        for (int i=0; i<availableSeats.length; i++){
+            result = result + String.valueOf(availableSeats[i]) + "\t";
+        }
+        result = result + "\n" + "for seating students of " + String.valueOf(numberOfStudents) +"\n";
+        result = result + "the max spacing is " + String.valueOf(maxSpace) + "\n";
+        System.out.println(result);
         return result;
     }
 }
