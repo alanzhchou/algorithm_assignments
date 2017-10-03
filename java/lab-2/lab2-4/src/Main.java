@@ -150,9 +150,9 @@ class Twin{
         for (int i=0; i<findTwin.length; i++){
             result = result + String.valueOf(findTwin[i]) + "\t";
         }
-        if (number > 1){result = result + "\nfor the key of: " + key +"; there are " + number + " pairs of twins\n";}
-        else if (number == 1){result = result + "\nfor the key of: " + key +"; there are " + number + " pair of twins\n";}
-        else if (number == 0){result = result + "\nfor the key of: " + key +"; there are no twins\n";}
+        if (number > 1){result = result + "\nYES!\nfor the key of: " + key +"; there are " + number + " pairs of triple twins\n";}
+        else if (number == 1){result = result + "\nYES!\nfor the key of: " + key +"; there are " + number + " pair of triple twins\n";}
+        else if (number == 0){result = result + "\nNO!\nfor the key of: " + key +"; there are no triple twins\n";}
         return result;
     }
 }
