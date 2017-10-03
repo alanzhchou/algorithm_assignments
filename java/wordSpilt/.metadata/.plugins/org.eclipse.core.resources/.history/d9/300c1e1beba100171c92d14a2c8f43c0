@@ -1,0 +1,52 @@
+package wordsplit;
+
+import java.io.File;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+
+
+
+public class spilt {
+	public static void main(String[] args) {
+		try{
+			//防止文件读取或建立错误，catch捕捉错误并打印
+
+			//读取文件
+			String pathname = ".\\dickens.txt";
+			//这里为相对路径读取
+			File filename = new File(pathname);
+            FileInputStream is = new FileInputStream(filename);
+            //建立一个输入流对象reader
+			InputStreamReader reader = new InputStreamReader(is);
+
+            //将文本读入
+			BufferedReader br = new BufferedReader(reader);
+
+
+			String line = "";
+
+			line = br.readLine();
+			while(br.readLine() != null){
+                line = line + br.readLine();//一次读入一行
+			}
+            br.close();
+
+            is.close();
+            System.out.println(line);
+
+            String reg = "(\\s+)|(,)|(\\n)";
+            String[] result = line.split(reg);
+            for (int i=0; i<result.length;i++){
+                System.out.println(result[i]);
+            }
+
+		} catch(Exception e){
+			e.printStackTrace();
+		}
+
+	}
+
+
+
+}
