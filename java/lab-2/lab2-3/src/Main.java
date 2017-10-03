@@ -4,15 +4,15 @@ import java.util.Random;
 
 public class Main {
     public static void main(String[] args) {
-            //生成长度为10，元素为1-10的随机数组；即1,2,3,4,5,6,7,8,9,10
-            //其中RandomArray类中setRandomArray方法，已注释排序语句，所以输出为乱序数组，若需输出有序数组，去除该注释即可
+        //生成长度为10，元素为1-10的随机数组；即1,2,3,4,5,6,7,8,9,10
+        //其中RandomArray类中setRandomArray方法，已注释排序语句，所以输出为乱序数组，若需输出有序数组，去除该注释即可
         RandomArray random1 = new RandomArray(10,1,10);
 
         Twin test1 = new Twin(random1.getRandomArray());
 
-            //置入键值，用于查询
+        //置入键值，用于查询
         test1.twinOf(8);//本身会返回twins的数量（int）
-            //格式化输出twinOf置入数字后的查询信息
+        //格式化输出twinOf置入数字后的查询信息
         System.out.println(test1.toString());
     }
 }

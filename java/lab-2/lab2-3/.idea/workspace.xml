@@ -16,10 +16,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="146" column="8" lean-forward="true" selection-start-line="146" selection-start-column="8" selection-end-line="148" selection-end-column="9" />
+            <state relative-caret-position="-210">
+              <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="class#RandomArray#0" expanded="false" />
                 <element signature="method#toString#0;class#RandomArray#0" expanded="false" />
                 <element signature="method#setFindTwin#0;class#Twin#0" expanded="false" />
                 <element signature="method#twinOf#0;class#Twin#0" expanded="false" />
@@ -540,12 +541,12 @@
       <updated>1506934589965</updated>
       <workItem from="1506934592845" duration="9304000" />
       <workItem from="1507031421756" duration="353000" />
-      <workItem from="1507031911782" duration="613000" />
+      <workItem from="1507031911782" duration="634000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10270000" />
+    <option name="totallyTimeSpent" value="10291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="29" width="1938" height="1060" extended-state="6" />
@@ -621,6 +622,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#RandomArray#0" expanded="false" />
             <element signature="method#toString#0;class#RandomArray#0" expanded="false" />
             <element signature="method#setFindTwin#0;class#Twin#0" expanded="false" />
             <element signature="method#twinOf#0;class#Twin#0" expanded="false" />
@@ -647,6 +649,7 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#RandomArray#0" expanded="false" />
             <element signature="method#toString#0;class#RandomArray#0" expanded="false" />
             <element signature="method#setFindTwin#0;class#Twin#0" expanded="false" />
             <element signature="method#twinOf#0;class#Twin#0" expanded="false" />
@@ -680,10 +683,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="512">
-          <caret line="146" column="8" lean-forward="true" selection-start-line="146" selection-start-column="8" selection-end-line="148" selection-end-column="9" />
+        <state relative-caret-position="-210">
+          <caret line="6" column="37" lean-forward="true" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="class#RandomArray#0" expanded="false" />
             <element signature="method#toString#0;class#RandomArray#0" expanded="false" />
             <element signature="method#setFindTwin#0;class#Twin#0" expanded="false" />
             <element signature="method#twinOf#0;class#Twin#0" expanded="false" />
