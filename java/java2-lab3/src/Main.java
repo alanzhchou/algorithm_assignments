@@ -1,11 +1,11 @@
 import java.io.File;
 import java.io.IOException;
 
-public class one {
+public class Main {
 
-//    public static void main(String[] args) throws IOException{
-//        find("A:\\QSunSync", depth);
-//    }
+    public static void main(String[] args) throws IOException{
+        find("A:\\QSunSync", depth);
+    }
 
     private static int depth=1;
 
