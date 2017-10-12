@@ -4,15 +4,19 @@
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.Properties;
 
-class test{
-    public static void  main(String[] args){
+public class find_language {
+    public static void  main(String[] args) throws IOException {
         ReadCnf cnf = new ReadCnf();
-        System.out.println(cnf.getStop_words_dir());
+
+        PathHashMap filesMap = new PathHashMap();
+
+        filesMap.find(cnf.getStop_words_dir(),filesMap.depth);
+
     }
 }
-
 
 //这个类用来读取配置文件,构造函数中就已经初始化读取配置文件，
 //并将参数stop_words_dir设置为读取的配置
@@ -44,3 +48,5 @@ class ReadCnf {
         return "";
     }
 }
+
+

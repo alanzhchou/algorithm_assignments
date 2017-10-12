@@ -1,15 +1,21 @@
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
 
-public class one {
+/**
+ * Created by ZH-AlanChou on 2017/10/12.
+ */
+//这个类用来读取配置文件指定的数据文件目录下的所有文件，及其路径的键值对（Hashmap）
+class PathHashMap{
+    private HashMap<String,String> file_path_all;
 
 //    public static void main(String[] args) throws IOException{
 //        find("A:\\QSunSync", depth);
 //    }
 
-    private static int depth=1;
+    public static int depth=1;
 
-    public static void find(String pathName,int depth) throws IOException{
+    public static void find(String pathName,int depth) throws IOException {
         int filecount=0;
         //获取pathName的File对象
         File dirFile = new File(pathName);
