@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.HashMap;
 
 /**
@@ -12,7 +13,27 @@ public class WordsLibrary {
     private String[] fileName;
     private String[] filePath;
 
-    public WordsLibrary(HashMap<String,String> path_mapping){
+    PathMapping mapping;
+    private HashMap path_mapping  = new HashMap();
+    private int size = 0;
 
+    public WordsLibrary() throws IOException {
+        PathMapping mapping = new PathMapping();
+        this.mapping = mapping;
+
+        this.path_mapping = mapping.getPathMapping();
+        this.size = mapping.getSize();
+
+        this.fileName = new String[this.size];
+        this.filePath = new String[this.size];
+    }
+
+    //操作哈希表和此类中的两个
+    public void fill_fileName_and_filePath(){
+
+    }
+
+    public PathMapping getMapping(){
+        return this.mapping;
     }
 }

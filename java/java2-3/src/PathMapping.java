@@ -40,9 +40,15 @@ public class PathMapping {
                 StringBuffer name = new StringBuffer(file.getName());
                 StringBuffer path = new StringBuffer(file.getPath());
                 path_mapping.put(name,path);
-                size++;
             }
         }
+
+        Iterator iter_3 = path_mapping.entrySet().iterator();
+        while (iter_3.hasNext()) {
+            iter_3.next();
+            this.size++;
+        }
+
         return path_mapping;
     }
 
