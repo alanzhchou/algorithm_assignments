@@ -1,17 +1,11 @@
 /**
- * Created by ZH-AlanChou on 2017/10/11.
+ * Created by ZH-AlanChou on 2017/10/13.
  */
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-
-class test{
-    public static void  main(String[] args){
-        ReadCnf cnf = new ReadCnf();
-        System.out.println(cnf.getStop_words_dir());
-    }
-}
+import java.io.File;
 
 
 //这个类用来读取配置文件,构造函数中就已经初始化读取配置文件，
@@ -27,7 +21,7 @@ class ReadCnf {
 
         Properties prop = new Properties(defprop);
         try (BufferedReader conf
-             = new BufferedReader(new FileReader("folder_setting.cnf"))){
+                     = new BufferedReader(new FileReader("folder_setting.cnf"))){
             prop.load(conf);
         }catch (IOException e){
             System.err.println("Warning: folder path setting failed");
