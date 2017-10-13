@@ -10,11 +10,17 @@ import java.util.stream.Stream;
 public class LanguageResult {
     public static void  main(String[] args) throws IOException {
 
+
         WordsLibrary lib = new WordsLibrary();
-        PathMapping mapping = lib.getMapping();
+        lib.toString();
+        System.out.println("++++++++++++++++++++++++");
+        lib.getAllToken("german.txt");
+
+
+
+
 //        lib.getMapping();
-        mapping.toString();
-        System.out.println(mapping.getSize());
+
 
 //        Tokenizer fileToken = new Tokenizer("languages\\english.txt");
 //        String a = fileToken.nextToken();
