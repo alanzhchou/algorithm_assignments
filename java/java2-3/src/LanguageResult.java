@@ -15,15 +15,5 @@ public class LanguageResult {
 
         System.out.println("++++++++++++++++++++++++++++++++");
         result.getResult();
-
-//        lib.getMapping();
-
-
-//        Tokenizer fileToken = new Tokenizer("languages\\english.txt");
-//        String a = fileToken.nextToken();
-//        while (a!=null){
-//            System.out.println(a);
-//            a = fileToken.nextToken();
-//        }
     }
 }

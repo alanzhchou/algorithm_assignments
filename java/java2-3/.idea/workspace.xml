@@ -28,8 +28,8 @@
       <file leaf-file-name="LanguageResult.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/LanguageResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="338">
+              <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,8 +59,8 @@
         <option value="$PROJECT_DIR$/src/PathMapping.java" />
         <option value="$PROJECT_DIR$/src/WordsLibrary.java" />
         <option value="$PROJECT_DIR$/src/Tokenizer.java" />
-        <option value="$PROJECT_DIR$/src/LanguageResult.java" />
         <option value="$PROJECT_DIR$/src/CompareResult.java" />
+        <option value="$PROJECT_DIR$/src/LanguageResult.java" />
       </list>
     </option>
   </component>
@@ -580,12 +580,12 @@
       <workItem from="1507877942492" duration="10153000" />
       <workItem from="1507899999523" duration="3840000" />
       <workItem from="1507905531327" duration="538000" />
-      <workItem from="1507912321948" duration="9841000" />
+      <workItem from="1507912321948" duration="9928000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34444000" />
+    <option name="totallyTimeSpent" value="34531000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="29" width="1938" height="1060" extended-state="6" />
@@ -996,8 +996,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/LanguageResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="338">
+          <caret line="16" column="27" lean-forward="true" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
