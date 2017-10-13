@@ -17,9 +17,9 @@ import java.util.Map;
 public class WordsLibrary {
     private String[] fileName;
     private String[] filePath;
+    private int size = 0;
 
     private HashMap path_mapping  = new HashMap();
-    private int size = 0;
 //    private HashMap file_to_lib = new HashMap();
 
     public WordsLibrary() throws IOException {
@@ -53,25 +53,35 @@ public class WordsLibrary {
         return null;
     }
 
-    public void getAllToken(String name) throws ValueException, IOException {
-        int index = getindex(name);
-        Tokenizer myTokens = new Tokenizer(filePath[index]);
-        String a = myTokens.nextToken();
-        while (a!=null){
-            System.out.println(a);
-            a = myTokens.nextToken();
-        }
-    }
+//    public void getAllToken(String name) throws ValueException, IOException {
+//        int index = getindex(name);
+//        Tokenizer myTokens = new Tokenizer(filePath[index]);
+//        String a = myTokens.nextToken();
+//        while (a!=null){
+//            System.out.println(a);
+//            a = myTokens.nextToken();
+//        }
+//    }
+//
+//    private int getindex(String name){
+//        int index = -1;
+//        for (int i=0; i<this.fileName.length;i++){
+//            System.out.println(fileName[i]);
+//            if (name.equals(fileName[i])){
+//                index = i;
+//                break;
+//            }
+//        }
+//        return index;
+//    }
 
-    private int getindex(String name){
-        int index = -1;
-        for (int i=0; i<this.fileName.length;i++){
-            System.out.println(fileName[i]);
-            if (name.equals(fileName[i])){
-                index = i;
-                break;
-            }
-        }
-        return index;
+    public int getSize(){
+        return this.size;
+    }
+    public String[] getFileName(){
+        return this.fileName;
+    }
+    public String[] getFilePath(){
+        return this.filePath;
     }
 }

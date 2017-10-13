@@ -10,14 +10,11 @@ import java.util.stream.Stream;
 public class LanguageResult {
     public static void  main(String[] args) throws IOException {
 
+        CompareResult result = new CompareResult("test.txt");
+        result.toString();
 
-        WordsLibrary lib = new WordsLibrary();
-        lib.toString();
-        System.out.println("++++++++++++++++++++++++");
-        lib.getAllToken("german.txt");
-
-
-
+        System.out.println("++++++++++++++++++++++++++++++++");
+        result.getResult();
 
 //        lib.getMapping();
 

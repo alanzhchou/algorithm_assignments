@@ -18,7 +18,9 @@ import java.util.Arrays.*;
  */
 public class Tokenizer {
     private String fileContent = new String("");
-    private ArrayList allToken = new ArrayList();
+    StringBuffer token = new StringBuffer();
+    private String[] allToken;
+
     private int pos = 0;
 
     public Tokenizer(String fileName)
@@ -37,6 +39,7 @@ public class Tokenizer {
         isr.close();
         // System.out.println(fileContent);
     }
+
 
     public String nextToken() {
         String  tok = "";
@@ -63,14 +66,17 @@ public class Tokenizer {
         } catch (IndexOutOfBoundsException e) {
             return null;
         }
-        this.allToken.add(tok.toLowerCase());
         return tok.toLowerCase();
     }
 
     public String[] getAllTokens(){
-        String[] s = new String[allToken.size()];
-        s = (String[]) allToken.toArray(s);
-        return s;
+        String a = this.nextToken();
+        while (a!=null){
+            this.token.append(a + ";");
+            a = this.nextToken();
+        }
+        this.allToken = token.toString().split(";");
+        return this.allToken;
     }
 }
 
