@@ -1,14 +1,9 @@
-import jdk.nashorn.internal.runtime.regexp.joni.exception.ValueException;
-
 import java.io.IOException;
-import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-/**
- * Created by ZH-AlanChou on 2017/10/13.
- */
+
 
 /*
 此方法用来建立每个路径下，文件所存储的所有字库，用键值对来存储，

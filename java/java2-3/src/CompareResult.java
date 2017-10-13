@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.Arrays;
 
 /**
  * Created by ZH-AlanChou on 2017/10/13.
@@ -57,7 +56,7 @@ public class CompareResult {
 
     public String toString(){
         for (int i=0; i<this.similarity.length; i++){
-            System.out.printf("%s --> %f\n",this.fileName[i],this.similarity[i]);
+            System.out.printf("%s --> %.3f\n",this.fileName[i],this.similarity[i]);
         }
         return null;
     }

@@ -5,7 +5,6 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Properties;
-import java.io.File;
 
 
 //这个类用来读取配置文件,构造函数中就已经初始化读取配置文件，
