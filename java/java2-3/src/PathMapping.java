@@ -16,13 +16,20 @@ import java.util.Map;
  */
 public class PathMapping {
     private HashMap path_mapping  = new HashMap();
+    private int size = 0;
+    ReadCnf cnf;
 
-    public HashMap<String,String> getPathMapping(String folder_path) throws IOException{
+    public PathMapping(){
+        this.cnf = new ReadCnf();
+    }
+
+    public HashMap<String,String> getPathMapping() throws IOException{
 //      try (Stream<Path> paths = Files.walk(Paths.get(folder_path))) {
 //          paths
 //                 .filter(Files::isRegularFile)
 //                 .forEach(System.out::println);
 //      }
+        String folder_path = this.cnf.getStop_words_dir();
 
         path_mapping.clear();
         File folder = new File(folder_path);
@@ -33,19 +40,24 @@ public class PathMapping {
                 StringBuffer name = new StringBuffer(file.getName());
                 StringBuffer path = new StringBuffer(file.getPath());
                 path_mapping.put(name,path);
+                size++;
             }
         }
         return path_mapping;
     }
 
     public String toString(){
-        Iterator iter = path_mapping.entrySet().iterator();
-        while (iter.hasNext()) {
-            Map.Entry entry = (Map.Entry) iter.next();
+        Iterator iter_2 = path_mapping.entrySet().iterator();
+        while (iter_2.hasNext()) {
+            Map.Entry entry = (Map.Entry) iter_2.next();
             Object key = entry.getKey();
             Object value = entry.getValue();
             System.out.println(key + ":" + value);
         }
         return null;
+    }
+
+    public int getSize(){
+        return this.size;
     }
 }

@@ -9,10 +9,16 @@ import java.util.stream.Stream;
  */
 public class LanguageResult {
     public static void  main(String[] args) throws IOException {
-        ReadCnf cnf = new ReadCnf();
 
         PathMapping mapping = new PathMapping();
-        mapping.getPathMapping(cnf.getStop_words_dir());
+        mapping.getPathMapping();
         mapping.toString();
+
+        Tokenizer fileToken = new Tokenizer("languages\\english.txt");
+        String a = fileToken.nextToken();
+        while (a!=null){
+            System.out.println(a);
+            a = fileToken.nextToken();
+        }
     }
 }
