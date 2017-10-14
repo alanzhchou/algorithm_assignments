@@ -50,11 +50,12 @@ public class CompareResult {
 
     public String getResult(){
         String result_language = this.fileName[getMaxIndex()].split("\\.")[0];
-        System.out.printf("the text maybe %s\n",result_language);
+        System.out.printf("%s\n",result_language);
         return result_language;
     }
 
     public String toString(){
+        System.out.println("the similarity here:");
         for (int i=0; i<this.similarity.length; i++){
             System.out.printf("%s --> %.3f\n",this.fileName[i],this.similarity[i]);
         }
