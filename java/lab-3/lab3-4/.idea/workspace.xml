@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4368b9cf-9375-4a9a-b1f9-60ba4d407781" name="Default" comment="" />
+    <list default="true" id="adb87f7a-a2fb-4879-bd2c-17a7316898a4" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,8 +16,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="-1034">
+              <caret line="11" column="68" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
               <folding>
                 <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
@@ -26,15 +26,17 @@
                 <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
-                <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#delete#2;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#indexOf#1;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#reverse#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#findSpy#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
@@ -51,6 +53,11 @@
       </file>
     </leaf>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>f</find>
+    </findStrings>
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -59,7 +66,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MyLinkedList.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
@@ -96,21 +102,21 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab3-3" />
+              <option name="myItemId" value="lab3-4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab3-3" />
+              <option name="myItemId" value="lab3-4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab3-3" />
+              <option name="myItemId" value="lab3-4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab3-3" />
+              <option name="myItemId" value="lab3-4" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -124,8 +130,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -156,7 +162,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lab3-3" />
+      <module name="lab3-4" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -454,7 +460,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lab3-3" />
+      <module name="lab3-4" />
       <envs />
       <method />
     </configuration>
@@ -540,50 +546,45 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4368b9cf-9375-4a9a-b1f9-60ba4d407781" name="Default" comment="" />
-      <created>1508000726246</created>
+      <changelist id="adb87f7a-a2fb-4879-bd2c-17a7316898a4" name="Default" comment="" />
+      <created>1508142689482</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1508000726246</updated>
-      <workItem from="1508000730399" duration="118000" />
-      <workItem from="1508043778902" duration="1626000" />
-      <workItem from="1508051451731" duration="36745000" />
-      <workItem from="1508126532356" duration="4347000" />
-      <workItem from="1508141353816" duration="2858000" />
-      <workItem from="1508144553120" duration="68000" />
+      <updated>1508142689482</updated>
+      <workItem from="1508142692762" duration="3357000" />
+      <workItem from="1508149858169" duration="6798000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="45762000" />
+    <option name="totallyTimeSpent" value="10155000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="29" width="1938" height="1060" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32922733" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17811158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.152897" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.48040313" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -603,12 +604,11 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>184</line>
+          <line>354</line>
           <properties />
-          <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="35" />
+      <option name="time" value="3" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -629,15 +629,17 @@
             <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
             <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#2;class#MyLinkedList#0" expanded="false" />
             <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOf#1;class#MyLinkedList#0" expanded="false" />
             <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#reverse#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#findSpy#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
@@ -653,8 +655,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-1034">
+          <caret line="11" column="68" lean-forward="false" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
           <folding>
             <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
@@ -663,210 +665,17 @@
             <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
             <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#2;class#MyLinkedList#0" expanded="false" />
             <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOf#1;class#MyLinkedList#0" expanded="false" />
             <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#reverse#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28886">
-          <caret line="1313" column="0" lean-forward="true" selection-start-line="1313" selection-start-column="0" selection-end-line="1313" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="10560">
-          <caret line="480" column="21" lean-forward="true" selection-start-line="480" selection-start-column="21" selection-end-line="480" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#reverse#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#reverse#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#reverse#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/AbstractStringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="66" column="0" lean-forward="false" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/StringBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-32">
-          <caret line="1096" column="28" lean-forward="true" selection-start-line="1096" selection-start-column="28" selection-end-line="1096" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/Arrays.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1313" column="0" lean-forward="false" selection-start-line="1313" selection-start-column="0" selection-end-line="1313" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="480" column="21" lean-forward="false" selection-start-line="480" selection-start-column="21" selection-end-line="480" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#reverse#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#findSpy#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />

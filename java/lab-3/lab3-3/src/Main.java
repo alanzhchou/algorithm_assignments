@@ -1,62 +1,22 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
-import java.util.Comparator;
-import java.util.LinkedList;
 
 public class Main {
     public static void main(String[] args) {
-
         MyLinkedList<Integer> myList1 = new MyLinkedList();
-        Integer[] a = {1,2,3};
+        Integer[] a = {1,3,2,4};
         myList1.append(a);
-
-        MyLinkedList<Integer> myList2 = new MyLinkedList();
-        Integer[] b = {1,2,3,4,5};
-        myList2.append(b);
-
-        MyLinkedList<Integer> myList3 = new MyLinkedList();
-        Integer[] c = {1,1,1,2};
-        myList3.append(c);
-
-
-        MyLinkedList<Integer> myList4 = new MyLinkedList();
-        Integer[] d = {1,1,2,2,3,3,4};
-        myList4.append(d);
-
-
-        MyLinkedList<Integer> sum1 = myList1.plus(myList2);
-        sum1.toString();
+        myList1.toString();
         System.out.println("++++++++++++++++++++++++++++++++++++");
 
-        MyLinkedList<Integer> sum2 = myList3.plus(myList4);
-        sum2.toString();
-        System.out.println("++++++++++++++++++++++++++++++++++++");
+        myList1.insert(0,5);
+        myList1.toString();
+        myList1.delete(3);
+        myList1.toString();
+        myList1.update(1,7);
+        myList1.toString();
 
-        MyLinkedList<Integer> myList5 = new MyLinkedList();
-        Integer[] e = {4,3,2,1};
-        myList5.append(e);
-        myList5.toString();
-        myList5.sort();
-        myList5.toString();
-
-//        myList.toString();
-//        System.out.println("++++++++++++++++++");
-//
-//        myList.delete(0,5);
-//        myList.toString();
-//
-//        myList.update(0,150);
-//        myList.toString();
-//
-//        Integer[] b = {11,12,15};
-//        myList.insert(0,b);
-//        myList.toString();
-//
-//        Integer[] g = {1,2,5,6,1,2};
-//        Integer[] t = myList.toArray(g);
-//        for (int i=0; i<myList.getSize(); i++){
-//            System.out.println(t[i]);
-//        }
+        myList1.reverse();
+        myList1.toString();
     }
 }
 
@@ -323,6 +283,20 @@ class MyLinkedList<T>{
             index++;
         }
         return result;
+    }
+
+    public<T> void reverse(){
+        Node<T> find = new Node<T>();
+        find = first;
+        while (find != null){
+            Node<T> after = find.next;
+            find.next = find.prev;
+            find.prev = after;
+            find = after;
+        }
+        Node<T> over = last;
+        last = first;
+        first = over;
     }
 
     public<T> T[] toArray(T[] a) {

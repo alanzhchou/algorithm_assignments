@@ -1,17 +1,18 @@
 public class Polynomial {
+
     public static void main(String[] args) {
         Polynomial p1 = new Polynomial();
-        p1.append(2, 2);
-        p1.append(3, 3);
+        p1.append(1, 1);
+        p1.append(1, 2);
         System.out.println("p1: " + p1);
 
+
         Polynomial p2 = new Polynomial();
+        p2.append(1, 1);
         p2.append(1, 2);
-        p2.append(2, 4);
         System.out.println("p2: " + p2);
 
-        System.out.println("加: " + p1.add(p2));
-        System.out.println("减: " + p1.substract(p2));
+        System.out.println("乘: " + p1.multiply(p2));
     }
 
 

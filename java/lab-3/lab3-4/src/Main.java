@@ -3,32 +3,13 @@ import java.util.Arrays;
 public class Main {
     public static void main(String[] args) {
         MyLinkedList<Integer> myList1 = new MyLinkedList();
-        Integer[] a = {1, 2, 3};
+        Integer[] a = {1,2};
         myList1.append(a);
-
-        MyLinkedList<Integer> myList2 = new MyLinkedList();
-        Integer[] b = {1, 2, 3, 4, 5};
-        myList2.append(b);
-
-        MyLinkedList<Integer> myList3 = new MyLinkedList();
-        Integer[] c = {1, 1, 1, 2};
-        myList3.append(c);
-
-        MyLinkedList<Integer> myList4 = new MyLinkedList();
-        Integer[] d = {1, 1, 2, 2, 3, 3, 4};
-        myList4.append(d);
-
-
-        MyLinkedList<Integer> sum1 = myList1.plus(myList2);
         myList1.toString();
-        myList2.toString();
-        sum1.toString();
-        System.out.println("++++++++++++++++++++++++++++++++++++");
+        System.out.println("++++++++++++++++++++++++++++++++++++Find the Spy");
 
-        MyLinkedList<Integer> sum2 = myList3.plus(myList4);
-        myList3.toString();
-        myList4.toString();
-        sum2.toString();
+        System.out.println("steps: for 3: " + myList1.findSpy(3));
+        System.out.println("steps: for 56: " + myList1.findSpy(56));
     }
 }
 
@@ -135,6 +116,10 @@ class MyLinkedList<T>{
 
     public<T> void pop(){
         delete(size-1);
+    }
+
+    public<T> void delete(Node<T> aNode){
+        delete(indexOf(aNode));
     }
 
     public<T> void delete(int index){
@@ -268,6 +253,21 @@ class MyLinkedList<T>{
         update(index,new Node(nodeContent));
     }
 
+    public<T> int indexOf(Node<T> aNode){
+        Node<T> find = new Node<T>();
+        find = first;
+
+        int index = 0;
+        while (find != null){
+            if (find == aNode){
+                break;
+            }
+            find = find.next;
+            index++;
+        }
+        return index;
+    }
+
     public<T> int indexOf(T item){
         int index = 0;
         Node<T> find = new Node<T>();
@@ -295,6 +295,42 @@ class MyLinkedList<T>{
             index++;
         }
         return result;
+    }
+
+    public<T> void reverse(){
+        Node<T> find = new Node<T>();
+        find = first;
+        while (find != null){
+            Node<T> after = find.next;
+            find.next = find.prev;
+            find.prev = after;
+            find = after;
+        }
+        Node<T> over = last;
+        last = first;
+        first = over;
+    }
+
+    //用于做题，只用于非重复链表，ps，在初始化或append时输入重复量有可能会导致结果出错
+    public<T> int findSpy(int steps){
+        MyLinkedList<T> listNew = this.myclone();
+
+        Node<T> find = new Node<T>();
+        listNew.last.next = listNew.getFirst();
+        listNew.first.prev = listNew.getLast();
+        find = listNew.getFirst();
+
+        while (listNew.getFirst() != listNew.getLast()){
+            int step = 0;
+            while (step < steps-1){
+                find = find.next;
+                step++;
+            }
+            Node<T> after = find.next.next;
+            listNew.delete(find.next);
+            find = after;
+        }
+        return indexOf(listNew.getFirst().content);
     }
 
     public<T> T[] toArray(T[] a) {

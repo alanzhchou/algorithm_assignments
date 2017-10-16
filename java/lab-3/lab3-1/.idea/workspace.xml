@@ -16,11 +16,34 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="189">
-              <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+            <state relative-caret-position="475">
+              <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
               <folding>
-                <element signature="method#printArr#0;class#Main#0" expanded="false" />
-                <element signature="method#Conbin#0;class#Conbin#0" expanded="false" />
+                <element signature="class#MyLinkedList#0" expanded="false" />
+                <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="class#Node#0" expanded="false" />
+                <element signature="method#Node#0;class#Node#0" expanded="false" />
+                <element signature="method#Node#1;class#Node#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -67,6 +90,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -95,9 +120,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -521,11 +544,14 @@
       <workItem from="1507995320950" duration="1226000" />
       <workItem from="1507997257744" duration="3457000" />
       <workItem from="1508095517681" duration="1759000" />
+      <workItem from="1508141661694" duration="398000" />
+      <workItem from="1508143318227" duration="35000" />
+      <workItem from="1508144530556" duration="89000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7055000" />
+    <option name="totallyTimeSpent" value="7577000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="29" width="1938" height="1060" extended-state="6" />
@@ -545,7 +571,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.06276824" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14109442" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -579,11 +605,112 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="class#Node#0" expanded="false" />
+            <element signature="method#Node#0;class#Node#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="class#Node#0" expanded="false" />
+            <element signature="method#Node#0;class#Node#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="class#Node#0" expanded="false" />
+            <element signature="method#Node#0;class#Node#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/HelloWorld.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -592,8 +719,31 @@
         <state relative-caret-position="440">
           <caret line="25" column="20" lean-forward="true" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
-            <element signature="method#printArr#0;class#Main#0" expanded="false" />
-            <element signature="method#Conbin#0;class#Conbin#0" expanded="false" />
+            <element signature="class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="class#Node#0" expanded="false" />
+            <element signature="method#Node#0;class#Node#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -602,7 +752,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,8 +760,31 @@
         <state relative-caret-position="264">
           <caret line="12" column="33" lean-forward="true" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
           <folding>
-            <element signature="method#printArr#0;class#Main#0" expanded="false" />
-            <element signature="method#Conbin#0;class#Conbin#0" expanded="false" />
+            <element signature="class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="class#Node#0" expanded="false" />
+            <element signature="method#Node#0;class#Node#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -621,17 +793,39 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="35" column="29" lean-forward="true" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
+        <state relative-caret-position="475">
+          <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
           <folding>
-            <element signature="method#printArr#0;class#Main#0" expanded="false" />
-            <element signature="method#Conbin#0;class#Conbin#0" expanded="false" />
+            <element signature="class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#MyLinkedList#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#clear#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#append#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#insert#2;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#delete#1;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteFirst#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#deleteAllItem#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#update#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOf#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#indexOfLast#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toArray#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#myclone#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#sort#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#plus#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#toString#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#listInfo#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="class#Node#0" expanded="false" />
+            <element signature="method#Node#0;class#Node#0" expanded="false" />
+            <element signature="method#Node#1;class#Node#0" expanded="false" />
           </folding>
         </state>
       </provider>
