@@ -10,7 +10,7 @@ public class Polynomial {
         System.out.println("求导: " + p1.differentiation());
 
         Polynomial p2 = new Polynomial();
-        p2.append(2.2, 5);
+        p2.append(-2.2, 5);
         p2.append(3.4, 6);
         p2.append(5.7, 1);
         System.out.println("p2: " + p2);
