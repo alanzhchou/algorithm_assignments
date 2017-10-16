@@ -296,6 +296,35 @@ class MyLinkedList<T>{
         update(index,new Node(nodeContent));
     }
 
+    public<T> int indexOf(T item){
+        int index = 0;
+        Node<T> find = new Node<T>();
+        find = first;
+        while (find != null){
+            if (item.equals(find.content)){
+                return index;
+            }
+            find = find.next;
+            index++;
+        }
+        return -1;
+    }
+
+    public<T> int indexOfLast(T item){
+        int result = -1;
+        int index = 0;
+        Node<T> find = new Node<T>();
+        find = first;
+        while (find != null){
+            if (item.equals(find.content)){
+                result = index;
+            }
+            find = find.next;
+            index++;
+        }
+        return result;
+    }
+
     public<T> T[] toArray(T[] a) {
         if (a.length < size){
             a = (T[]) java.lang.reflect.Array.newInstance(
@@ -449,6 +478,9 @@ class Node<T>{
     Node next;
 
     public Node(){
+        content = null;
+        prev = null;
+        next = null;
     }
 
     public Node(T nodeContent){
