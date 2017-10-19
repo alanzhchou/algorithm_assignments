@@ -163,8 +163,9 @@ class MyLinkedList<T>{
             find.next = null;
             find.prev = null;
         }
-        size--;
-
+        if (size >= 1){
+            size--;
+        }
     }
 
     public<T> void delete(int index1, int index2){
