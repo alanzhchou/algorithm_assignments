@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e5d7ebdb-1038-4ce8-a33f-0d0482185200" name="Default" comment="" />
+    <list default="true" id="c88613de-3847-4f3a-89ed-8e46f9a47a79" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,16 +16,20 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="333">
-              <caret line="81" column="36" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+            <state relative-caret-position="220">
+              <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
               <folding>
+                <element signature="e#118#127#0" expanded="true" />
+                <element signature="class#MyLinkedList#0" expanded="false" />
                 <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-                <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-                <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#push_first#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#push_last#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#pop_first#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#pop_last#0;class#MyLinkedList#0" expanded="false" />
+                <element signature="method#testQuenu#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
                 <element signature="class#Node#0" expanded="false" />
                 <element signature="method#Node#0;class#Node#0" expanded="false" />
-                <element signature="method#Node#1;class#Node#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -52,9 +56,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="650" />
+    <option name="x" value="720" />
     <option name="y" value="38" />
-    <option name="width" value="1278" />
+    <option name="width" value="1208" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -72,41 +76,43 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab4-2" />
+              <option name="myItemId" value="HelloWorld" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloWorld" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab4-2" />
+              <option name="myItemId" value="HelloWorld" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab4-2" />
+              <option name="myItemId" value="HelloWorld" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab4-2" />
+              <option name="myItemId" value="HelloWorld" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Main.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -137,7 +143,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lab4-2" />
+      <module name="lab4-4" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -435,7 +441,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lab4-2" />
+      <module name="lab4-4" />
       <envs />
       <method />
     </configuration>
@@ -519,35 +525,23 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e5d7ebdb-1038-4ce8-a33f-0d0482185200" name="Default" comment="" />
-      <created>1508436901866</created>
+      <changelist id="c88613de-3847-4f3a-89ed-8e46f9a47a79" name="Default" comment="" />
+      <created>1508491421294</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1508436901866</updated>
-      <workItem from="1508436905835" duration="597000" />
-      <workItem from="1508473720047" duration="4431000" />
-      <workItem from="1508482744030" duration="9000" />
-      <workItem from="1508485915592" duration="597000" />
-      <workItem from="1508487653984" duration="596000" />
-      <workItem from="1508491659178" duration="1339000" />
-      <workItem from="1508501748185" duration="8000" />
-      <workItem from="1508501775672" duration="22000" />
-      <workItem from="1508501872142" duration="11000" />
-      <workItem from="1508501973727" duration="601000" />
-      <workItem from="1508504576011" duration="34000" />
+      <updated>1508491421294</updated>
+      <workItem from="1508491424241" duration="4962000" />
+      <workItem from="1508500938113" duration="609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8245000" />
+    <option name="totallyTimeSpent" value="5571000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="650" y="38" width="1278" height="1050" extended-state="0" />
+    <frame x="720" y="38" width="1208" height="1050" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -558,20 +552,20 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295583" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22083806" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14202657" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17548501" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.58437145" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -589,10 +583,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
-      <option name="time" value="8" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -606,173 +597,37 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#118#127#0" expanded="true" />
+            <element signature="class#MyLinkedList#0" expanded="false" />
             <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#push_first#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#push_last#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#pop_first#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#pop_last#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#testQuenu#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
             <element signature="class#Node#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="114" column="5" lean-forward="false" selection-start-line="114" selection-start-column="5" selection-end-line="114" selection-end-column="5" />
           <folding>
+            <element signature="e#118#127#0" expanded="true" />
+            <element signature="class#MyLinkedList#0" expanded="false" />
             <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#push_first#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#push_last#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#pop_first#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#pop_last#0;class#MyLinkedList#0" expanded="false" />
+            <element signature="method#testQuenu#0;class#MyLinkedList#0" expanded="false" />
             <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
             <element signature="class#Node#0" expanded="false" />
             <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="81" column="36" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
-          <folding>
-            <element signature="method#MyLinkedList#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#push#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#pop#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="method#endPrint#0;class#MyLinkedList#0" expanded="false" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="method#Node#0;class#Node#0" expanded="false" />
-            <element signature="method#Node#1;class#Node#0" expanded="false" />
           </folding>
         </state>
       </provider>
