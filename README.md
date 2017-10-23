@@ -1,2 +1,2 @@
-# InterestingLittleThing
-### some little interesting things in programming
+# algorithm
+### algorithm using c/cpp or java
