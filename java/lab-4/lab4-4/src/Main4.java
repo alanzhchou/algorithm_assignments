@@ -1,7 +1,42 @@
-public class Main {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main4 {
     public static void main(String[] args) {
+        InputStream inputStream = System.in;
+        InputReader in = new InputReader(inputStream);
+
+        int length = 0;
+
+        int b = in.nextInt();
+        for (int i=0; i<b; i++){
+            length = in.nextInt();
+        }
+        Integer a[] = new Integer[length];;
+
+        int element = 0;
+        int first = 0;
+        int second = 0;
+        int third = 0;
+        for (int i=0; i<length; i++){
+            first = in.nextInt();
+            second = in.nextInt();
+            if (second == 2){
+                third = 0;
+                element = first*10 + second;
+            }else {
+                third = in.nextInt();
+                element = first*100 + second*10 + third;
+            }
+            a[i] = element;
+        }
+
         MyLinkedList<Integer> test = new MyLinkedList<Integer>();
-        Integer[] a = {111,112,113,211,212,213,12,22};
+
+//        Integer[] a = {111,112,113,211,212,213,12,22};
         test.testQuenu(a);
     }
 }
@@ -133,5 +168,30 @@ class Node<T>{
         content = nodeContent;
         prev = null;
         next = null;
+    }
+}
+
+class InputReader{
+    public BufferedReader reader;
+    public StringTokenizer tokenizer;
+
+    public InputReader(InputStream stream){
+        reader = new BufferedReader(new InputStreamReader(stream),32768);
+        tokenizer = null;
+    }
+
+    public String next(){
+        while (tokenizer == null || !tokenizer.hasMoreTokens()){
+            try{
+                tokenizer = new StringTokenizer(reader.readLine());
+            }catch (IOException e){
+                throw new RuntimeException();
+            }
+        }
+        return  tokenizer.nextToken();
+    }
+
+    public int nextInt(){
+        return Integer.parseInt(next());
     }
 }

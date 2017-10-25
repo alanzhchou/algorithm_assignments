@@ -1,9 +1,30 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.util.HashMap;
+import java.util.StringTokenizer;
 
-public class Main {
+public class Main3 {
     public static void main(String[] args) {
+        InputStream inputStream = System.in;
+        InputReader in = new InputReader(inputStream);
+
+        int length = 0;
+        length = in.nextInt();
+
+        String a[] = new String[length];;
+//        String[] a = {"(","()","{]","[(){}]","(])[","[[{{}}]]","[][{]]"};
+
+        String element = "";
+        for (int i=0; i<length; i++){
+            int operate = in.nextInt();
+            element = in.next();
+            a[i] = element;
+        }
+
         BracketsMatching test = new BracketsMatching();
-        String[] a = {"(","()","{]","[(){}]","(])[","[[{{}}]]","[][{]]"};
+
         test.cheaking(a);
     }
 }
@@ -124,12 +145,6 @@ class MyLinkedList<T> {
     }
 }
 
-//节点类，
-/*
-T content;
-Node prev;
-Node next;
- */
 class Node<T>{
     T content;
     Node prev;
@@ -139,5 +154,30 @@ class Node<T>{
         content = nodeContent;
         prev = null;
         next = null;
+    }
+}
+
+class InputReader{
+    public BufferedReader reader;
+    public StringTokenizer tokenizer;
+
+    public InputReader(InputStream stream){
+        reader = new BufferedReader(new InputStreamReader(stream),32768);
+        tokenizer = null;
+    }
+
+    public String next(){
+        while (tokenizer == null || !tokenizer.hasMoreTokens()){
+            try{
+                tokenizer = new StringTokenizer(reader.readLine());
+            }catch (IOException e){
+                throw new RuntimeException();
+            }
+        }
+        return  tokenizer.nextToken();
+    }
+
+    public int nextInt(){
+        return Integer.parseInt(next());
     }
 }

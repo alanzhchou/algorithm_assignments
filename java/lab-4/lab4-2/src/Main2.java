@@ -1,8 +1,35 @@
-public class Main {
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
+public class Main2 {
     public static void main(String[] args) {
-        MyLinkedList testList = new MyLinkedList(5);
-        //负数代表pop，正数则代表将相应的正数push进队列中
-        Integer a[] = {1,2,3,4,5,6,-1,7,8,9,-1,10};
+        InputStream inputStream = System.in;
+        InputReader in = new InputReader(inputStream);
+
+        int size = 0;
+        int length = 0;
+
+        int b = in.nextInt();
+        for (int i=0; i<b; i++){
+            size = in.nextInt();
+            length = in.nextInt();
+        }
+        Integer a[] = new Integer[length];;
+
+        int element = 0;
+        for (int i=0; i<length; i++){
+            int operate = in.nextInt();
+            if (operate == 2){
+                element = -1;
+            }else {
+                element = in.nextInt();
+            }
+            a[i] = element;
+        }
+        MyLinkedList testList = new MyLinkedList(size);
         testList.testQuenu(a);
     }
 }
@@ -89,12 +116,6 @@ class MyLinkedList<T> {
     }
 }
 
-//节点类，
-/*
-T content;
-Node prev;
-Node next;
- */
 class Node<T>{
     T content;
     Node prev;
@@ -110,5 +131,30 @@ class Node<T>{
         content = nodeContent;
         prev = null;
         next = null;
+    }
+}
+
+class InputReader{
+    public BufferedReader reader;
+    public StringTokenizer tokenizer;
+
+    public InputReader(InputStream stream){
+        reader = new BufferedReader(new InputStreamReader(stream),32768);
+        tokenizer = null;
+    }
+
+    public String next(){
+        while (tokenizer == null || !tokenizer.hasMoreTokens()){
+            try{
+                tokenizer = new StringTokenizer(reader.readLine());
+            }catch (IOException e){
+                throw new RuntimeException();
+            }
+        }
+        return  tokenizer.nextToken();
+    }
+
+    public int nextInt(){
+        return Integer.parseInt(next());
     }
 }

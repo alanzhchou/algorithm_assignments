@@ -1,7 +1,29 @@
-public class Main {
-    public static void main(String[] args) {
-        Integer[] a = {3,2,6,1,1,2};
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
 
+public class Main5 {
+    public static void main(String[] args) {
+        InputStream inputStream = System.in;
+        InputReader in = new InputReader(inputStream);
+
+        int length = 0;
+
+        int b = in.nextInt();
+        for (int i=0; i<b; i++){
+            length = in.nextInt();
+        }
+        Integer a[] = new Integer[length];;
+
+        int operate = 0;
+        for (int i=0; i<length; i++){
+            operate = in.nextInt();
+            a[i] = operate;
+        }
+
+//        Integer[] a = {3,2,6,1,1,2};
         MyLinkedList<Integer> test = new MyLinkedList<Integer>();
         test.testQuenu(a);
     }
@@ -46,23 +68,6 @@ class MyLinkedList<T> {
         }
         size++;
     }
-
-//    public<T> void pop_first(){
-//        if (size != 0&&size != 1){
-//            Node<T> after = first.next;
-//            first.next.prev = null;
-//            first.next = null;
-//            first.content = null;
-//            first = after;
-//            size--;
-//        }else if (size == 1){
-//            first.content = null;
-//            first.next = null;
-//            first.prev = null;
-//            first = last = null;
-//            size--;
-//        }
-//    }
 
     public<T> void pop_last(){
         if (size != 0&&size != 1){
@@ -130,5 +135,30 @@ class Node<T>{
         content = nodeContent;
         prev = null;
         next = null;
+    }
+}
+
+class InputReader{
+    public BufferedReader reader;
+    public StringTokenizer tokenizer;
+
+    public InputReader(InputStream stream){
+        reader = new BufferedReader(new InputStreamReader(stream),32768);
+        tokenizer = null;
+    }
+
+    public String next(){
+        while (tokenizer == null || !tokenizer.hasMoreTokens()){
+            try{
+                tokenizer = new StringTokenizer(reader.readLine());
+            }catch (IOException e){
+                throw new RuntimeException();
+            }
+        }
+        return  tokenizer.nextToken();
+    }
+
+    public int nextInt(){
+        return Integer.parseInt(next());
     }
 }
