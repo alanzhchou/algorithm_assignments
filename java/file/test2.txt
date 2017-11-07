@@ -1,0 +1,5 @@
+id,name,date,alive,tall
+1,alan,2015,alive,1.78
+2,dean,2016,dead,1.56
+3,bob,2017,alive,1.55
+4,alice,2014,alive,1.72

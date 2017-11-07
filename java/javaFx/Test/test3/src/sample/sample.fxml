@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="350.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="saarchField" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="43.0" prefWidth="261.0">
+         <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
+      <TableView fx:id="searchTable" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="searchTableId" maxWidth="75.0" minWidth="50.0" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="searchTableDate" maxWidth="100.0" minWidth="80.0" prefWidth="100.0" text="UTC_date" />
+            <TableColumn fx:id="searchTableLatitude" prefWidth="90.0" text="Latitude" />
+            <TableColumn fx:id="searchTableLongitude" prefWidth="96.0" text="Longitude" />
+            <TableColumn fx:id="searchTableDepth" prefWidth="84.0" text="Depth" />
+            <TableColumn fx:id="searchTableMagnitude" prefWidth="90.0" text="Magnitude" />
+            <TableColumn fx:id="searchTableRegion" prefWidth="234.0" text="Region" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="10.0" left="20.0" right="10.0" top="20.0" />
+         </VBox.margin>
+      </TableView>
+   </children>
+</VBox>
