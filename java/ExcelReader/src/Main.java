@@ -1,17 +1,13 @@
 import java.io.*;
+import java.security.Key;
 import java.util.*;
 
 public class Main {
     public static void main(String[] args){
-        String[] heads = {"id","UTC_date","latitude","longitude","depth","magnitude","region"};
+//        String[] heads = {"id","UTC_date","latitude","longitude","depth","magnitude","region"};
         String[] types = {"int","String","float","float","int","float","String"};
         CVSReader read = new CVSReader("earthquakes.csv",types);
-
-//        for (String head:heads){
-//            System.out.println(read.getVectorColValue(head));
-//        }
-
-        System.out.println(read.getRowbyKey("624203"));
+        read.printExcel();
     }
 }
 
@@ -20,7 +16,8 @@ class CVSReader<T>{
     //由于必须对列之后的选取存在一定的顺序性故此处用传统数组代替哈希表存储列名和类型
     private String[] tableHeads;
     private String[] types;
-    private Map<String,Vector> tableValues;
+    private Map<String,Vector> tableCols;
+    private Vector<Vector> tableRows;
     private String[] allItems;
 
     //此方法只需指定各列的数据类型，即数据文件中必须自带表头
@@ -56,9 +53,11 @@ class CVSReader<T>{
             allItemsBuffer.deleteCharAt(0);
 
             tableHeads = forTableHeads.toString().split(",");
+            this.types = types;
             allItems = allItemsBuffer.toString().split(",|\\n");
 
-            this.setCols(tableHeads,types);
+            this.setCols();
+            this.setRows();
         } catch (IOException e) {
             System.out.println("不存在的，你根本没有这个文件");
         }
@@ -91,39 +90,47 @@ class CVSReader<T>{
             allItemsBuffer.deleteCharAt(allItemsBuffer.length()-1);
             this.allItems = allItemsBuffer.toString().split(",|\\n|\"");
 
-            this.setCols(heads,types);
+            this.tableHeads = heads;
+            this.types = types;
+            this.setCols();
+            this.setRows();
         } catch (IOException e) {
             System.out.println("不存在的，你根本没有这个文件");
         }
     }
 
-    //设置列表的cols,
-    // heads代表该列的表头名称比如id，name等，
-    // types代表该列采用的储存类型，可选的有"int","String","float"三种
-    private void setCols(String[] heads, String[] types){
-        try {
-            if (heads.length == types.length){
-                this.tableHeads = heads;
-                this.types = types;
-                tableValues = new HashMap<String,Vector>();
+    public Map getAllCols(){
+        return this.tableCols;
+    }
 
-                for (int i=0; i<heads.length; i++){
-                    tableValues.put(heads[i],new Vector());
-                }
-            }else {
-            }
-            //尝试按照切分的allItems的字符串数组来填充各列的List
-            this.fill(allItems);
-        } catch (Exception e) {
-            System.out.println("不可棱，肯定是你col设置的不对");
+    public Vector getAllRows(){
+        return this.tableRows;
+    }
+
+    public Vector getSingleRow(int index){
+        try {
+            return tableRows.get(index);
+        }catch (Exception e){
+            System.out.println("行号错了，你肯定没弄好，，，");
         }
+        return new Vector();
+    }
+
+    public String[] getStringSingleRow(int index){
+        Vector row = getSingleRow(index);
+        int cols = row.size();
+        String[] stringRow = new String[cols];
+        for (int i=0; i<cols; i++){
+            stringRow[i] = String.valueOf(row.get(i));
+        }
+        return stringRow;
     }
 
     //返回查询的name列的值，此方法将所有值以String[]返回
     //若不存在该列，则报错-->"搞错了，这个列有问题，，，"
     public String[] getStringColValue(String name){
         try {
-            Vector aim = tableValues.get(name);
+            Vector aim = tableCols.get(name);
             String[] colValues = new String[aim.size()];
             for (int i=0; i<colValues.length; i++){
                 colValues[i] = String.valueOf(aim.get(i));
@@ -140,12 +147,24 @@ class CVSReader<T>{
     //若不存在该列，则报错-->"搞错了，这个列有问题，，，"
     public Vector getVectorColValue(String name){
         try {
-            return tableValues.get(name);
+            return tableCols.get(name);
         }
         catch (Exception e){
             System.out.println("搞错了，这个列有问题，，，");
         }
         return null;
+    }
+
+    public int getRowIndexByKey(String key){
+        for (String head:tableHeads){
+            Vector search = tableCols.get(head);
+            for (int i=0; i<search.size(); i++){
+                if (String.valueOf(search.get(i)).equals(key)){
+                    return i;
+                }
+            }
+        }
+        return -1;
     }
 
     //根据某个key值来寻找并返回该key所在的行的所有数据，以Vector的形式
@@ -154,7 +173,7 @@ class CVSReader<T>{
         int index = -1;
         boolean flag = false;
         for (String head:tableHeads){
-            Vector search = tableValues.get(head);
+            Vector search = tableCols.get(head);
             for (int i=0; i<search.size(); i++){
                 if (String.valueOf(search.get(i)).equals(key)){
                     index = i;
@@ -170,7 +189,7 @@ class CVSReader<T>{
         Vector row = new Vector();
         try {
             for (String head:tableHeads){
-                row.add(tableValues.get(head).get(index));
+                row.add(tableCols.get(head).get(index));
             }
         }catch (Exception e){
             System.out.println("不存在的，没有，，，，");
@@ -179,6 +198,77 @@ class CVSReader<T>{
         return row;
     }
 
+    public String getStringRowByKey(String key){
+        Vector stringRow = getRowbyKey(key);
+
+        StringBuffer row = new StringBuffer("");
+        for (int i=0; i<stringRow.size(); i++){
+            row.append(stringRow.get(i));
+            row.append("\t");
+        }
+        return row.toString();
+    }
+
+    public void updateSingleValueByRowAndCol(int row,int col,T newValue){
+        try {
+            Vector thisRow = (Vector) tableRows.get(row).clone();
+            thisRow.remove(col);
+            thisRow.add(col,newValue);
+            updateSingleRowByIndex(row,thisRow);
+        }catch (Exception e){
+            System.out.println("更新错误哦，，，");
+        }
+    }
+
+    public void updateSingleValueBykey(String key,T newValue){
+        int rowIndex = getRowIndexByKey(key);
+        Vector thisRow = tableRows.get(rowIndex);
+        System.out.println(thisRow);
+        for (int i=0; i<thisRow.size(); i++){
+            if (String.valueOf(thisRow.get(i)).equals(key)){
+                updateSingleValueByRowAndCol(rowIndex,i,newValue);
+            }
+        }
+    }
+
+    public void updateSingleRowByIndex(int index,Vector newRow){
+        Vector row = tableRows.get(index);
+        row.removeAllElements();
+        row.addAll(newRow);
+
+        StringBuffer update = new StringBuffer("");
+        for (Vector oneRow:tableRows){
+            for (int i=0; i<oneRow.size(); i++){
+                update.append(String.valueOf(oneRow.get(i)));
+                update.append(",");
+            }
+        }
+        allItems = update.toString().split(",");
+        setCols();
+    }
+
+    public void updateSingleRowBykey(String key,Vector newRow){
+        updateSingleRowByIndex(getRowIndexByKey(key),newRow);
+    }
+
+    public Vector getRowAndColOfKey(String key){
+        try {
+            int rowIndex = getRowIndexByKey(key);
+            Vector thisRow = tableRows.get(rowIndex);
+
+            for (int i=0; i<thisRow.size(); i++){
+                if (String.valueOf(thisRow.get(i)).equals(key)){
+                    Vector rowAndCol = new Vector();
+                    rowAndCol.add(rowIndex);
+                    rowAndCol.add(i);
+                    return rowAndCol;
+                }
+            }
+        }catch (Exception e){
+            System.out.println("不存在的，好像没有这个key吖，，，");
+        }
+        return null;
+    }
 
     /**
      * @param head 表头的名称
@@ -193,14 +283,12 @@ class CVSReader<T>{
         return "Do Not Exist";
     }
 
-
     /**
      * @return 数据存储的类型，按tableHeads的顺序
      */
     public String[] getTypes(){
         return this.types;
     }
-
 
     /**
      * @return 数据存储的各列表头
@@ -216,6 +304,73 @@ class CVSReader<T>{
         return this.title;
     }
 
+    public void printExcel(){
+        System.out.println(title);
+        for (String head:tableHeads){
+            System.out.printf("%-25s",head);
+        }
+        System.out.println();
+
+        int length = tableCols.get(tableHeads[0]).size();
+        for (int i=0; i<length; i++){
+            for (int col=0; col<tableHeads.length; col++){
+                System.out.printf("%-25s",String.valueOf(tableCols.get(tableHeads[col]).get(i)));
+            }
+            System.out.println();
+        }
+    }
+
+    public String toString(){
+        StringBuffer excel = new StringBuffer("");
+        excel.append(title);
+        excel.append("\n");
+        for (String head:tableHeads){
+            excel.append(head+"\t");
+        }
+        excel.append("\n");
+
+        int length = tableCols.get(tableHeads[0]).size();
+        for (int i=0; i<length; i++){
+            for (int col=0; col<tableHeads.length; col++){
+                excel.append(String.valueOf(tableCols.get(tableHeads[col]).get(i)) + "\t");
+            }
+            excel.append("\n");
+        }
+        return excel.toString();
+    }
+
+    private void setRows(){
+        this.tableRows = new Vector<Vector>(tableCols.get(tableHeads[0]).size());
+
+        for (int i=0; i<tableRows.capacity(); i++){
+            Vector row = new Vector(tableHeads.length);
+            for (int j=0; j<row.capacity(); j++){
+                row.add(tableCols.get(tableHeads[j]).get(i));
+            }
+            tableRows.add(row);
+        }
+    }
+
+    //设置列表的cols,
+    // heads代表该列的表头名称比如id，name等，
+    // types代表该列采用的储存类型，可选的有"int","String","float"三种
+    private void setCols(){
+        try {
+            if (this.tableHeads.length == types.length){
+                this.tableCols = new HashMap<String,Vector>();
+
+                for (int i=0; i<this.tableHeads.length; i++){
+                    tableCols.put(this.tableHeads[i],new Vector());
+                }
+            }else {
+            }
+            //尝试按照切分的allItems的字符串数组来填充各列的List
+            this.fill(allItems);
+        } catch (Exception e) {
+            System.out.println("不可棱，肯定是你col设置的不对");
+        }
+    }
+
     private void fill(String[] longString){
         int rank;//遍历时的列
         int colNumbers = tableHeads.length;//总的列数
@@ -224,16 +379,16 @@ class CVSReader<T>{
                 rank = i%colNumbers;
                 switch (types[rank]){
                     case "int":
-                        tableValues.get(tableHeads[rank]).add(Integer.parseInt(longString[i]));
+                        tableCols.get(tableHeads[rank]).add(Integer.parseInt(longString[i]));
                         break;
                     case "float":
-                        tableValues.get(tableHeads[rank]).add(Double.parseDouble(longString[i]));
+                        tableCols.get(tableHeads[rank]).add(Double.parseDouble(longString[i]));
                         break;
                     default:
                         if (longString[i].charAt(0) == '\"')
-                            tableValues.get(tableHeads[rank]).add(longString[i].split("\"")[1]);
+                            tableCols.get(tableHeads[rank]).add(longString[i].split("\"")[1]);
                         else
-                            tableValues.get(tableHeads[rank]).add(longString[i]);
+                            tableCols.get(tableHeads[rank]).add(longString[i]);
                         break;
                 }
             }
