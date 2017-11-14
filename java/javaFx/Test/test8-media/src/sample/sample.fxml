@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<SplitPane dividerPositions="0.8316582914572864" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="531.0" prefWidth="768.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <items>
+    <AnchorPane fx:id="videoMedia" minHeight="0.0" minWidth="0.0" prefHeight="436.0" prefWidth="822.0">
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="430.0" fitWidth="750.0" layoutX="8.0" layoutY="3.0" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+         <opaqueInsets>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </opaqueInsets>
+         <children>
+            <Button fx:id="startButton" layoutX="250.0" layoutY="17.0" mnemonicParsing="false" text="&gt;" />
+            <Button fx:id="restartButton" layoutX="302.0" layoutY="17.0" mnemonicParsing="false" text="&lt;&lt;" />
+            <Label layoutX="381.0" layoutY="22.0" text="Volume" />
+            <Slider fx:id="volumeSlider" layoutX="475.0" layoutY="23.0" />
+         </children></AnchorPane>
+  </items>
+</SplitPane>
