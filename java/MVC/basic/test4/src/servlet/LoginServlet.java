@@ -12,7 +12,7 @@ import service.UserinfoServiceImpl;
 @WebServlet(name = " LoginServlet",urlPatterns = {"/LoginServlet"})
 public class LoginServlet extends HttpServlet {
     private static final long serialVersionUID =	1L;
-    protected void doGet(HttpServletRequest	request,	HttpServletResponse	response)
+    protected void doGet(HttpServletRequest	request,HttpServletResponse	response)
             throws ServletException,	IOException	{
         request.setCharacterEncoding("UTF-8");
         String	username=request.getParameter("username");
@@ -36,17 +36,17 @@ public class LoginServlet extends HttpServlet {
             int result=userinfoservice.login(username,password);
             if(result==1){
                 System.out.println("有这个人");
-                request.getRequestDispatcher("success.jsp").forward(request,	response);
+                request.getRequestDispatcher("/BookServlet").forward(request,response);
             }else{
                 System.out.println("查无此人，或连接失败");
-                request.setAttribute("msg",	"the	username	or	password	is	wrong");
-                request.getRequestDispatcher("Login.jsp").forward(request,	response);
+                request.setAttribute("msg","the username or password is wrong");
+                request.getRequestDispatcher("Login.jsp").forward(request,response);
             }
         }
     }
 
-    protected void doPost(HttpServletRequest	request,	HttpServletResponse	response)
-            throws ServletException,	IOException	{
-        doGet(request,	response);
+    protected void doPost(HttpServletRequest request,HttpServletResponse response)
+            throws ServletException,IOException	{
+        doGet(request,response);
     }
 }
