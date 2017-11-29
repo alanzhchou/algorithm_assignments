@@ -3,10 +3,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Main {
-
     public static void main(String[] args) {
         InputStream inputStream = System.in;
         InputReader in = new InputReader(inputStream);
@@ -41,7 +41,9 @@ public class Main {
                     btree.markRoot();
                 }
             }
-            btree.levelTrave();
+            btree.preOrderTrave();
+            btree.inOrderTrave();
+            btree.postOrderTrave();
         }
     }
 }
@@ -105,6 +107,123 @@ class Btree{
                 exam = nodes.get(searchForIndex(queue.get(0)));
             }
         }
+    }
+
+    public void preOrderTrave(){
+        int root = -1;
+        for (int i=0; i<nodes.size(); i++){
+            if (nodes.get(i).isRoot == true){
+                root = i;
+            }
+        }
+        Node exam = nodes.get(root);
+        Stack<Integer> stack = new Stack<Integer>();
+        int i=0;
+        stack.push(exam.selfValue);
+        System.out.print(exam.selfValue + " ");i++;
+        boolean retry = false;
+        while (i<nodes.size()){
+            if (exam.leftChild != 0&&!retry){
+                stack.push(exam.leftChild);
+                System.out.print(exam.leftChild + " ");i++;
+                exam = nodes.get(searchForIndex(exam.leftChild));
+                retry = false;
+            }else {
+                stack.pop();
+                exam = nodes.get(searchForIndex(stack.lastElement()));
+                retry = true;
+                if (exam.rightChild != 0){
+                    stack.push(exam.rightChild);
+                    System.out.print(exam.rightChild + " ");i++;
+                    exam = nodes.get(searchForIndex(exam.rightChild));
+                    retry = false;
+                }else {
+                    stack.pop();
+                    exam = nodes.get(searchForIndex(stack.lastElement()));
+                    retry = true;
+                }
+            }
+        }
+        System.out.println();
+    }
+
+    public void inOrderTrave(){
+        int root = -1;
+        for (int i=0; i<nodes.size(); i++){
+            if (nodes.get(i).isRoot == true){
+                root = i;
+            }
+        }
+        Node exam = nodes.get(root);
+        Stack<Integer> stack = new Stack<Integer>();
+        int i=0;
+        stack.push(exam.selfValue);
+        boolean retry = false;
+        while (i<nodes.size()){
+            if (exam.leftChild != 0&&!retry){
+                stack.push(exam.leftChild);
+                exam = nodes.get(searchForIndex(exam.leftChild));
+                retry = false;
+            }else {
+                System.out.print(stack.lastElement() + " ");i++;
+                stack.pop();
+                exam = nodes.get(searchForIndex(stack.lastElement()));
+                retry = true;
+                if (exam.rightChild != 0){
+                    System.out.print(stack.lastElement() + " ");i++;
+                    stack.push(exam.rightChild);
+                    exam = nodes.get(searchForIndex(exam.rightChild));
+                    retry = false;
+                }else {
+                    System.out.print(stack.lastElement() + " ");i++;
+                    stack.pop();
+                    exam = nodes.get(searchForIndex(stack.lastElement()));
+                    retry = true;
+                }
+            }
+        }
+        System.out.println();
+    }
+
+    public void postOrderTrave(){
+        int root = -1;
+        for (int i=0; i<nodes.size(); i++){
+            if (nodes.get(i).isRoot == true){
+                root = i;
+            }
+        }
+        Node exam = nodes.get(root);
+        Stack<Integer> stack = new Stack<Integer>();
+        int i=0;
+        stack.push(exam.selfValue);
+        boolean retry = false;
+        while (i<nodes.size()){
+            if (exam.leftChild != 0&&!retry){
+                stack.push(exam.leftChild);
+                exam = nodes.get(searchForIndex(exam.leftChild));
+                retry = false;
+            }else {
+                System.out.print(stack.lastElement() + " ");i++;
+                stack.pop();
+                exam = nodes.get(searchForIndex(stack.lastElement()));
+                retry = true;
+                if (exam.rightChild != 0){
+                    if (i != nodes.size()-1){
+                        stack.push(exam.rightChild);
+                        exam = nodes.get(searchForIndex(exam.rightChild));
+                        retry = false;
+                    }else {
+                        System.out.print(stack.lastElement() + " ");i++;
+                    }
+                }else {
+                    System.out.print(stack.lastElement() + " ");i++;
+                    stack.pop();
+                    exam = nodes.get(searchForIndex(stack.lastElement()));
+                    retry = true;
+                }
+            }
+        }
+        System.out.println();
     }
 }
 

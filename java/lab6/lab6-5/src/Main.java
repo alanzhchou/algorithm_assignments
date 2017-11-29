@@ -3,10 +3,10 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
+import java.util.Stack;
 import java.util.StringTokenizer;
 
 public class Main {
-
     public static void main(String[] args) {
         InputStream inputStream = System.in;
         InputReader in = new InputReader(inputStream);
@@ -41,7 +41,7 @@ public class Main {
                     btree.markRoot();
                 }
             }
-            btree.levelTrave();
+            btree.findMaxLength();
         }
     }
 }
@@ -105,6 +105,71 @@ class Btree{
                 exam = nodes.get(searchForIndex(queue.get(0)));
             }
         }
+    }
+
+    public int findMaxLength(){
+        int root = -1;
+        for (int i=0; i<nodes.size(); i++){
+            if (nodes.get(i).isRoot == true){
+                root = i;
+            }
+        }
+        Node rootNode = nodes.get(root);
+        Node exam = rootNode;
+
+        Stack<Integer> stack = new Stack<Integer>();
+        stack.push(exam.selfValue);
+
+        int leftLength = 0;
+        int rightLength = 0;
+        int tempLength = 0;
+        boolean retry = false;
+        int toRootTimes = 0;
+        while (toRootTimes != 3){
+            if (exam.leftChild != 0&&!retry){
+                stack.push(exam.leftChild);
+                exam = nodes.get(searchForIndex(exam.leftChild));
+                retry = false;
+            }else {
+                tempLength = stack.size();
+                if (toRootTimes == 0){
+                    if (tempLength>leftLength){
+                        leftLength = tempLength;
+                    }
+                }else {
+                    if (tempLength>rightLength){
+                        rightLength = tempLength;
+                    }
+                }
+                stack.pop();
+                exam = nodes.get(searchForIndex(stack.lastElement()));
+                retry = true;
+                if (exam.selfValue == rootNode.selfValue){
+                    toRootTimes++;
+                }
+                if (exam.rightChild != 0){
+                    stack.push(exam.rightChild);
+                    exam = nodes.get(searchForIndex(exam.rightChild));
+                    retry = false;
+                }else {
+                    tempLength = stack.size();
+                    if (toRootTimes == 0){
+                        if (tempLength>leftLength){
+                            leftLength = tempLength;
+                        }
+                    }else {
+                        if (tempLength>rightLength){
+                            rightLength = tempLength;
+                        }
+                    }
+                    stack.pop();
+                    exam = nodes.get(searchForIndex(stack.lastElement()));
+                    retry = true;
+                }
+            }
+        }
+        System.out.println(leftLength + rightLength - 2);
+        return leftLength + rightLength - 2;
     }
 }
 

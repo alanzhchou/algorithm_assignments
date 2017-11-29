@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8847148-6fd7-4ab7-a822-f4d2f2178db0" name="Default" comment="" />
+    <list default="true" id="9731eb5a-b315-4f99-8a3c-a6b52ca4f151" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,16 +16,22 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
-              <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
+            <state relative-caret-position="143">
+              <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#1579#1585#0" expanded="true" />
+                <element signature="class#Main#0" expanded="false" />
+                <element signature="e#1675#1681#0" expanded="true" />
                 <element signature="method#searchForIndex#0;class#Btree#0" expanded="false" />
                 <element signature="method#markRoot#0;class#Btree#0" expanded="false" />
                 <element signature="method#printNodes#0;class#Btree#0" expanded="false" />
                 <element signature="method#levelTrave#0;class#Btree#0" expanded="false" />
-                <element signature="e#2807#2816#0" expanded="true" />
+                <element signature="e#2903#2912#0" expanded="true" />
+                <element signature="e#3666#3675#0" expanded="true" />
+                <element signature="method#inOrderTrave#0;class#Btree#0" expanded="false" />
+                <element signature="e#5024#5033#0" expanded="true" />
+                <element signature="method#postOrderTrave#0;class#Btree#0" expanded="false" />
+                <element signature="e#6410#6419#0" expanded="true" />
                 <element signature="class#Node#0" expanded="false" />
                 <element signature="class#InputReader#0" expanded="false" />
                 <element signature="method#InputReader#0;class#InputReader#0" expanded="false" />
@@ -57,9 +63,9 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="451" />
+    <option name="x" value="519" />
     <option name="y" value="38" />
-    <option name="width" value="1477" />
+    <option name="width" value="1409" />
     <option name="height" value="1050" />
   </component>
   <component name="ProjectView">
@@ -81,21 +87,21 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -113,11 +119,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -135,11 +141,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -157,11 +163,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lab6-2" />
+              <option name="myItemId" value="lab6-3" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -212,7 +218,7 @@
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lab6-2" />
+      <module name="lab6-3" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -510,7 +516,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="lab6-2" />
+      <module name="lab6-3" />
       <envs />
       <method />
     </configuration>
@@ -599,26 +605,21 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="c8847148-6fd7-4ab7-a822-f4d2f2178db0" name="Default" comment="" />
-      <created>1511527666375</created>
+      <changelist id="9731eb5a-b315-4f99-8a3c-a6b52ca4f151" name="Default" comment="" />
+      <created>1511862049013</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1511527666375</updated>
-      <workItem from="1511527669383" duration="7038000" />
-      <workItem from="1511608947008" duration="1810000" />
-      <workItem from="1511777100038" duration="11882000" />
-      <workItem from="1511851501744" duration="597000" />
-      <workItem from="1511854217988" duration="1161000" />
-      <workItem from="1511878373039" duration="103000" />
+      <updated>1511862049013</updated>
+      <workItem from="1511862052110" duration="6422000" />
+      <workItem from="1511879719908" duration="1215000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22591000" />
+    <option name="totallyTimeSpent" value="7637000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="451" y="38" width="1477" height="1050" extended-state="0" />
-    <editor active="true" />
+    <frame x="519" y="38" width="1409" height="1050" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -634,7 +635,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1318603" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14307116" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -659,7 +660,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -674,12 +675,18 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1579#1585#0" expanded="true" />
+            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#1675#1681#0" expanded="true" />
             <element signature="method#searchForIndex#0;class#Btree#0" expanded="false" />
             <element signature="method#markRoot#0;class#Btree#0" expanded="false" />
             <element signature="method#printNodes#0;class#Btree#0" expanded="false" />
             <element signature="method#levelTrave#0;class#Btree#0" expanded="false" />
-            <element signature="e#2807#2816#0" expanded="true" />
+            <element signature="e#2903#2912#0" expanded="true" />
+            <element signature="e#3666#3675#0" expanded="true" />
+            <element signature="method#inOrderTrave#0;class#Btree#0" expanded="false" />
+            <element signature="e#5024#5033#0" expanded="true" />
+            <element signature="method#postOrderTrave#0;class#Btree#0" expanded="false" />
+            <element signature="e#6410#6419#0" expanded="true" />
             <element signature="class#Node#0" expanded="false" />
             <element signature="class#InputReader#0" expanded="false" />
             <element signature="method#InputReader#0;class#InputReader#0" expanded="false" />
@@ -691,79 +698,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="143">
+          <caret line="111" column="32" lean-forward="true" selection-start-line="111" selection-start-column="32" selection-end-line="111" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1579#1585#0" expanded="true" />
+            <element signature="class#Main#0" expanded="false" />
+            <element signature="e#1675#1681#0" expanded="true" />
             <element signature="method#searchForIndex#0;class#Btree#0" expanded="false" />
             <element signature="method#markRoot#0;class#Btree#0" expanded="false" />
             <element signature="method#printNodes#0;class#Btree#0" expanded="false" />
             <element signature="method#levelTrave#0;class#Btree#0" expanded="false" />
-            <element signature="e#2807#2816#0" expanded="true" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="class#InputReader#0" expanded="false" />
-            <element signature="method#InputReader#0;class#InputReader#0" expanded="false" />
-            <element signature="method#next#0;class#InputReader#0" expanded="false" />
-            <element signature="method#nextLine#0;class#InputReader#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1579#1585#0" expanded="true" />
-            <element signature="method#searchForIndex#0;class#Btree#0" expanded="false" />
-            <element signature="method#markRoot#0;class#Btree#0" expanded="false" />
-            <element signature="method#printNodes#0;class#Btree#0" expanded="false" />
-            <element signature="method#levelTrave#0;class#Btree#0" expanded="false" />
-            <element signature="e#2807#2816#0" expanded="true" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="class#InputReader#0" expanded="false" />
-            <element signature="method#InputReader#0;class#InputReader#0" expanded="false" />
-            <element signature="method#next#0;class#InputReader#0" expanded="false" />
-            <element signature="method#nextLine#0;class#InputReader#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1579#1585#0" expanded="true" />
-            <element signature="method#searchForIndex#0;class#Btree#0" expanded="false" />
-            <element signature="method#markRoot#0;class#Btree#0" expanded="false" />
-            <element signature="method#printNodes#0;class#Btree#0" expanded="false" />
-            <element signature="method#levelTrave#0;class#Btree#0" expanded="false" />
-            <element signature="e#2807#2816#0" expanded="true" />
-            <element signature="class#Node#0" expanded="false" />
-            <element signature="class#InputReader#0" expanded="false" />
-            <element signature="method#InputReader#0;class#InputReader#0" expanded="false" />
-            <element signature="method#next#0;class#InputReader#0" expanded="false" />
-            <element signature="method#nextLine#0;class#InputReader#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="42" column="13" lean-forward="true" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1579#1585#0" expanded="true" />
-            <element signature="method#searchForIndex#0;class#Btree#0" expanded="false" />
-            <element signature="method#markRoot#0;class#Btree#0" expanded="false" />
-            <element signature="method#printNodes#0;class#Btree#0" expanded="false" />
-            <element signature="method#levelTrave#0;class#Btree#0" expanded="false" />
-            <element signature="e#2807#2816#0" expanded="true" />
+            <element signature="e#2903#2912#0" expanded="true" />
+            <element signature="e#3666#3675#0" expanded="true" />
+            <element signature="method#inOrderTrave#0;class#Btree#0" expanded="false" />
+            <element signature="e#5024#5033#0" expanded="true" />
+            <element signature="method#postOrderTrave#0;class#Btree#0" expanded="false" />
+            <element signature="e#6410#6419#0" expanded="true" />
             <element signature="class#Node#0" expanded="false" />
             <element signature="class#InputReader#0" expanded="false" />
             <element signature="method#InputReader#0;class#InputReader#0" expanded="false" />
