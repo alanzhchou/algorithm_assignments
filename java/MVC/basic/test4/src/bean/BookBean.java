@@ -1,8 +1,5 @@
 package bean;
 
-/**
- * Created by ZH-AlanChou on 2017/11/16.
- */
 public class BookBean {
     private int id;
     private String bookName;
