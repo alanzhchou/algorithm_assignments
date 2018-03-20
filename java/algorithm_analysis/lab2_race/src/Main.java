@@ -1,8 +1,10 @@
 import java.io.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.StringTokenizer;
+
+//1. 根据输入构造图
+//2. 根据图生成迪杰斯特拉路由表
+//3. 根据路由表计算总步数
 
 public class Main {
     public static void main(String[] args) {
@@ -23,7 +25,7 @@ class NMMap{
         initMap();
     }
 
-    public int testPoints(Point point1,Point point2){
+    public int testPoints(Point point){
         return -1;
     }
 

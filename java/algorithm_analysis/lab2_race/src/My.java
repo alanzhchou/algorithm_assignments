@@ -9,9 +9,9 @@ import org.junit.Test;
 public class My {
     @Test
     public void testMyNextInt(){
-        RaceEvent event = new RaceEvent();
+        NMMap event = new NMMap();
         System.out.println(event);
-        int next = RaceEvent.reader.nextInt();
+        int next = NMMap.reader.nextInt();
         System.out.println(next);
     }
 }
