@@ -9,9 +9,7 @@ import org.junit.Test;
 public class My {
     @Test
     public void testMyNextInt(){
-        NMMap event = new NMMap();
-        System.out.println(event);
-        int next = NMMap.reader.nextInt();
-        System.out.println(next);
+        boolean[][] matrix = new boolean[5][5];
+        System.out.println(matrix[0][1]);
     }
 }

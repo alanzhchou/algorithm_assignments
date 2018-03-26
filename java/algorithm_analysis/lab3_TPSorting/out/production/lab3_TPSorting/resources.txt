@@ -1,0 +1,37 @@
+4 4
+B>C
+D>C
+D>B
+B>C
+2 1
+B>A
+3 2
+B>A
+A>B
+0 0
+
+
+Preference sequence cannot be determined.
+Preference sequence determined after 1 relations: BA.
+Inconsistency found after 2 relations.
+
+
+Resource Limitation
+    CPU: 1 sec per instance
+    MEM: 64 MB
+
+ADBC
+
+4 4
+B>C
+D>C
+D>B
+A>D
+0 0
+
+2 1
+B>A
+3 2
+B>A
+A>B
+0 0
