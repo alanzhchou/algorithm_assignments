@@ -1,0 +1,17 @@
+﻿#IDEA常用gitignore配置
+
+out
+.settings
+bin
+classes
+target
+lib
+*.jar
+*.classpath
+*.project
+*.fxbuild
+*.cnf
+*.iml
+*.properties
+.idea
+
