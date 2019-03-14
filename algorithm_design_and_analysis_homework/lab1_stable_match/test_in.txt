@@ -1,0 +1,23 @@
+3
+adam bale campbell
+alice bob calvin
+bob calvin alice
+calvin bob alice
+bob alice calvin
+adam bale campbell
+adam campbell bale
+bale adam campbell
+
+5
+adam bale campbell daisy eddy
+alice bob calvin david emily
+david calvin alice emily bob
+bob alice calvin david emily
+alice emily david calvin bob
+alice calvin david bob emily
+alice bob calvin david emily
+campbell bale adam daisy eddy
+eddy daisy bale adam campbell
+daisy bale adam campbell eddy
+campbell daisy adam eddy bale
+bale adam eddy campbell daisy

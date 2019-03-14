@@ -5,3 +5,6 @@
 # Date: 19/2/27
 # version: 1.0
 # python_version: 3.62
+
+a, b = [int(i) for i in input().split()]
+print(a + b)
